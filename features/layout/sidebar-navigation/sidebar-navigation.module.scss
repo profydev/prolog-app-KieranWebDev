@@ -139,3 +139,13 @@
     display: flex;
   }
 }
+
+.collapseMenuItem img {
+  transform: rotate(360deg);
+  transition: all 300ms ease-in-out;
+}
+
+.collapseMenuItem.isCollapsed img {
+  transform: rotate(180deg);
+  transition: all 300ms ease-in-out;
+}
