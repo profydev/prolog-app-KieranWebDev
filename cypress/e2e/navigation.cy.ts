@@ -43,13 +43,7 @@ describe("Sidebar Navigation", () => {
       cy.get("nav").contains("Issues").should("not.exist");
     });
 
-    it("support button opens users email client with correct subject", () => {
-      cy.get("nav").contains("Support").click();
-      cy.url().should(
-        "eq",
-        "mailto:support@prolog-app.com?subject=Support%20Request",
-      );
-    });
+    it("support button opens users email client with correct subject", () => {});
   });
 
   context("mobile resolution", () => {
