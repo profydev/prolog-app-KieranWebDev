@@ -4,11 +4,25 @@
 @use "@styles/z-index";
 @use "@styles/misc";
 
+.logo {
+  width: 7.375rem;
+  content: url("/icons/logo-large.svg");
+
+  @media (min-width: breakpoint.$desktop) {
+    margin: space.$s0 space.$s4;
+    content: url("/icons/logo-small.svg");
+  }
+}
+
 .container,
 .fixedContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  .logo {
+    content: url("/icons/logo-large.svg");
+  }
 
   @media (min-width: breakpoint.$desktop) {
     width: 17.5rem;
@@ -21,6 +35,7 @@
 
       .logo {
         width: 1.4375rem;
+        content: url("/icons/logo-small.svg");
       }
     }
   }
@@ -45,14 +60,6 @@
   @media (min-width: breakpoint.$desktop) {
     height: unset;
     padding: space.$s8 space.$s4 space.$s6;
-  }
-}
-
-.logo {
-  width: 7.375rem;
-
-  @media (min-width: breakpoint.$desktop) {
-    margin: space.$s0 space.$s4;
   }
 }
 
