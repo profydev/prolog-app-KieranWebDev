@@ -15,6 +15,7 @@ export type Project = {
   name: string;
   language: ProjectLanguage;
   numIssues: number;
+
   numEvents24h: number;
   status: ProjectStatus;
 };
