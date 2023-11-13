@@ -42,6 +42,8 @@ describe("Sidebar Navigation", () => {
       // check that text is not rendered
       cy.get("nav").contains("Issues").should("not.exist");
     });
+
+    it("support button opens users email client with correct subject", () => {});
   });
 
   context("mobile resolution", () => {
